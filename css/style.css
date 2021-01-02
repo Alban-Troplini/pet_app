@@ -37,7 +37,12 @@
     background: transparent;
     display: inline-block;
 }
-.navul li:hover{
+.a-li{
+  background: transparent;
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.a-li:hover{
     color: goldenrod;
 }
 
