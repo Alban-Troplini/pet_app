@@ -29,10 +29,10 @@ tl.to('.titles', { x: 0, duration: 1, delay: 1, ease: "back.inOut(3)"})
 var myVar;
 
 function spiner() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 6000);
 }
 
 function showPage() {
-  document.getElementsByClassName("loader").style.display = "none";
-  document.getElementsByClassName(".card").style.display = "block";
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("upl").style.display = "grid";
 }

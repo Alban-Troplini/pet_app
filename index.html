@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black Cat</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body  onload="spiner()">
     <header>
        
         <div class="container">
@@ -15,11 +15,11 @@
             <div class="navbar">
                 <div class="img-back">
                     <!-- <img src="./images/ca.png" alt="black cat">  -->
-                    <img src="./images/ww.png" width="50px" alt="">
                 </div>
                 <div class="links">
                     <ul class="navul">
                         <li>Home</li>
+                        <li>About</li>
                         <li>Dogs</li>
                         <li>Cats</li>
                         <li>Contacts</li>
@@ -30,9 +30,9 @@
 
             <main class="main">
                 <div class="title">
-                    <h1 class="titles">Dogs & Cats</h1>
-                    <h3 class="text">Adopt a Pet</h3>
-                    <button class="but">Learn more</button>
+                    <h1 class="titles">Adopt your perfect friend</h1>
+                    <h3 class="text">and live happy!</h3>
+                    <button class="but"><a href="./pages/about.html">Learn more</a></button>
                 </div>
                 <div class="main-img">
                     <img class="mimg fade" src="./images/british-shorthair-american-shorthair-exotic-shorthair-siamese-cat-siberian-cat-royal-palace-f3335df8238ce6295e929e2efd134873.png" alt="cat">
@@ -43,7 +43,7 @@
             </main>
         </div>
     </header>
-    <section onload="spiner()">
+    <section>
         <!-- search section -->
         <div class="search">
             <!-- <div class="inputs">
@@ -68,9 +68,39 @@
     </section>
 
     <section>
-        <div class="loader"></div>
+        <div id="loader"></div>
 
-        <div class="card-con">
+        <div class="card-con" id="upl" style="display: none;">
+
+            <div class="card">
+                <img class="photo" src="https://static.toiimg.com/thumb/msid-67586673,width-800,height-600,resizemode-75,imgsize-3918697,pt-32,y_pad-40/67586673.jpg" alt="John" style="width:100%">
+                <h1>Persian cat</h1>
+                <p class="title">This is a persian cat. It's a white cat 
+                    and has long pelage. It's a male and his name is Boby.
+                </p>
+                <p class="title2">Gender: Male</p>
+                <button class="card-but">Contact</button>
+            </div>
+
+            <div class="card">
+                <img class="photo" src="https://static.scientificamerican.com/sciam/cache/file/92E141F8-36E4-4331-BB2EE42AC8674DD3_source.jpg" alt="John" style="width:100%">
+                <h1>Persian cat</h1>
+                <p class="title">This is a persian cat. It's a white cat 
+                    and has long pelage. It's a male and his name is Boby.
+                </p>
+                <p class="title2">Gender: Male</p>
+                <button class="card-but">Contact</button>
+            </div>
+
+            <div class="card">
+                <img class="photo" src="https://cdn.mos.cms.futurecdn.net/otjbibjaAbiifyN9uVaZyL-1200-80.jpg" alt="John" style="width:100%">
+                <h1>Persian cat</h1>
+                <p class="title">This is a persian cat. It's a white cat 
+                    and has long pelage. It's a male and his name is Boby.
+                </p>
+                <p class="title2">Gender: Male</p>
+                <button class="card-but">Contact</button>
+            </div>
             <div class="card">
                 <img class="photo" src="https://static.toiimg.com/thumb/msid-67586673,width-800,height-600,resizemode-75,imgsize-3918697,pt-32,y_pad-40/67586673.jpg" alt="John" style="width:100%">
                 <h1>Persian cat</h1>
@@ -101,7 +131,6 @@
                 <button class="card-but">Contact</button>
             </div>
 
-
             <div class="card">
                 <img class="photo" src="https://cdn.mos.cms.futurecdn.net/otjbibjaAbiifyN9uVaZyL-1200-80.jpg" alt="John" style="width:100%">
                 <h1>Persian cat</h1>
@@ -114,6 +143,23 @@
         </div>
 
     </section>
+
+        <footer>
+            <div class="f-cont">
+                <div class="row">
+                    <h3>Get your favorite pet, 
+                        they need and love you so much...</h3>
+                        <div class="social">
+                            <a href="#" style="background: transparent;"><i class="fa fa-twitter" style="background: transparent; color: #ff0152;"></i></a>
+                            <a href="#" style="background: transparent;"><i class="fa fa-linkedin" style="background: transparent; color: #ff0152;"></i></a>
+                            <a href="#" style="background: transparent;"><i class="fa fa-facebook" style="background: transparent; color: #ff0152;"></i></a>
+                            <a href="#" style="background: transparent;"><i class="fa fa-instagram" style="background: transparent; color: #ff0152;"></i></a>
+                        </div>
+                </div>
+                <h5 class="copyright">&copy;2021 Alban Troplini</h5>
+            </div>
+        </footer>
+ 
 
 
     
