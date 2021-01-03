@@ -1,10 +1,9 @@
 // main image slider
 var slideIndex = 0;
-showSlides();
+var slides = document.getElementsByClassName("mimg");
 
 function showSlides() {
   var i;
-  var slides = document.getElementsByClassName("mimg");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -13,6 +12,11 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+if (typeof(slides) != 'undefined' && slides != null){ 
+   showSlides();    
+}
+
 
 //gsap effects
 
@@ -26,13 +30,18 @@ tl.to('.titles', { x: 0, duration: 1, delay: 1, ease: "back.inOut(3)"})
 
 // spiner effect 
 
-var myVar;
+var spin;
 
-function spiner() {
-  myVar = setTimeout(showPage, 6000);
-}
+
+var load = document.getElementById("loader");
+var uploads = document.getElementById("upl")
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("upl").style.display = "grid";
+  load.style.display = "none";
+  uploads.style.display = "grid";
 }
+
+  function spiner() {
+    spin = setTimeout(showPage, 6000);
+  }
+

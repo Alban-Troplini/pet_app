@@ -23,12 +23,12 @@
   max-width: 40rem;
 }
 
-footer {
+.foter {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-footer p {
+.foter p {
   margin-bottom: .25rem;
 }
 

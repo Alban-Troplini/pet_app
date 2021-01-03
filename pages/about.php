@@ -1,15 +1,14 @@
-<link rel="stylesheet" href="../css/about.css">
 
-<div class="info">
-    <div class="row">
+<div class="info-ab">
+    <div class="row-ab">
         <div class="i-img"
         style="background: url(https://bloximages.chicago2.vip.townnews.com/buffalonews.com/content/tncms/assets/v3/editorial/c/b9/cb92108d-f7cc-5848-9001-286ca633e0a4/5f72284ec9602.image.jpg?resize=612%2C418);">
         </div>
         
         <div class="i-txt">
-        <h5>Why Adopt a Dog or Cat Over Buying?</h5>
+        <h5 class="ab-t">Why Adopt a Dog or Cat Over Buying?</h5>
 
-        <p>Did you know that over 1,000 people per hour run a search right
+        <p class="ab-p">Did you know that over 1,000 people per hour run a search right
              here looking to adopt a pet? Pet adoption is quickly 
              becoming the preferred way to find a new dog, puppy, 
              cat or kitten. Best of all, there are so many
@@ -28,11 +27,11 @@
 </div>
 
 
-    <div class="row">
+    <div class="row-ab">
         <div class="i-txt">
-        <h5>The Experts & Tools You Need to Find the Perfect Pet</h5>
+        <h5 class="ab-t">The Experts & Tools You Need to Find the Perfect Pet</h5>
 
-            <p>Have you addressed what type of pet personality you are looking for? 
+            <p class="ab-p">Have you addressed what type of pet personality you are looking for? 
                 Wait a second, did we just say personality, and not breed? 
                 Yes, that is right. Finding the ideal pet for yourself 
                 or family should start with an understanding of the ideal pet personality. 

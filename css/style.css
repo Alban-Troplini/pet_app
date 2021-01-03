@@ -2,18 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: rgb(228, 228, 228);
 }
 
-
-
 .navbar{
-    transform: translateY(-100px);
     position: fixed; /* Make it stick/fixed */
     width: 100%; /* Full width */
     top: 0;
     background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
-    padding: 20px 30px;
+    padding: 0px 30px;
     display: flex;
     justify-content: space-between;
     z-index: 10;
@@ -55,9 +51,8 @@
 
 }
 
-.main{
-    
-    margin: 200px 10px;
+.maini{
+    margin: 50px 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -66,12 +61,13 @@
 .titles{
     transform: translateX(-150%);
     font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #646464;
 }
 .text{
     transform: translateX(-150%);
     margin: 20px 0 10px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #575757;
 }
 .but{
@@ -81,17 +77,20 @@
     padding: 10px;
     border-radius: 20px;
     border: 2px solid #ffbb00;
-    
+    outline: none;
 }
-.but a:hover{
+.but:hover{
+  outline: none;
+}
+.but-a:hover{
     color: rgb(255, 185, 7);
     cursor: pointer;
-    
 }
-.but a{
+.but-a{
   text-decoration: none;
   color: rgb(155, 88, 0);
   font-size: 16px;
+  outline: none;
 }
 .title{
     
@@ -99,6 +98,8 @@
     justify-content: flex-start;
     margin: 0 0 0 100px;
 }
+
+
 
 
 /* main slider */
@@ -178,6 +179,7 @@
 .sub-but{
     width: 10%;
     border: none;
+    background: transparent;
     font-size: 1.5rem;
     outline: none;
     cursor: pointer;
@@ -194,14 +196,6 @@
     border-radius: 30px;
     outline: none;
 }
-
-.gender option{
-    font-size: 1rem;
-    outline: none;
-    color: #575757;
-    border-radius: 30px;
-}
-
 
 /* end of search section */
 
@@ -248,19 +242,18 @@
 }
 
 .photo{
-    width: 100%;
-    height: 50%;
+    width: 350px;
+    height: 200px;
     object-fit: cover;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    outline: none;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     max-width: 300px;
     margin: 20px;
+    height: 440px;
     text-align: center;
-    border-radius: 30px;
     background: white;
     transition: transform .5s;
    
@@ -271,6 +264,7 @@
 
   }
   .card h1{
+    font-size: 1.7rem;
       color: rgb(60, 61, 61);
       background: transparent;
   }
@@ -278,29 +272,29 @@
   .title {
     color: grey;
     font-size: 1rem;
-    margin: 20px;
+    margin: 10px;
     background: transparent;
   }
   
   .title2 {
     color: rgb(58, 58, 58);
     font-size: 1.1rem;
-    margin: 20px;
+    margin: 10px;
     background: transparent;
   }
 
  .card-but {
+   position: absolute;
     border: none;
     outline: 0;
-    padding: 7px;
+    bottom: 0;
+    padding: 5px;
     color: white;
     background: linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 1.3rem;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
   
   .card-but:hover{
@@ -314,28 +308,24 @@
 
 .f-cont{
   width: 100%;
-  height: 100px;
+  height: 150px;
   border-top: 10px solid #ffbb00;
-  background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, rgb(101, 125, 173) 100%);
 }
 .f-cont h3{
   font-size: 1.5rem;
-  color: #3f3f3f;
-  text-shadow: 1px 1px 1px #e4c4c4;
+  color: #e2e2e2;
+  text-shadow: 1px 1px 1px #3a3a3a;
   background: transparent;
   font-family: sans-serif;
 
 }
-.follow{
-  background: transparent;
-  text-align: center;
-}
+
 .social{
   font-size: 2rem;
   margin: 10px;
   background: transparent;
 }
-.row{
+.roww{
   margin: 5px;
   background: transparent;
   display: flex;
@@ -345,7 +335,7 @@
 
 .copyright{
   text-align: center;
-  color: #646464;
+  color: #a5a5a5;
   background: transparent;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
