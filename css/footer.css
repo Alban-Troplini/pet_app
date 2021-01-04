@@ -1,0 +1,48 @@
+ /* footer section */
+
+ .f-cont{
+    width: 100%;
+    border-top: 10px solid #ffbb00;
+  }
+  .roww h3{
+    font-size: 1.5rem;
+    color: #e2e2e2;
+    text-shadow: 1px 1px 1px #3a3a3a;
+    background: transparent;
+    font-family: sans-serif;
+    margin: 20px;
+  
+  }
+  
+  .social{
+    font-size: 2rem;
+    margin: 10px;
+    background: transparent;
+  }
+  .roww{
+    margin: 5px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .copyright{
+    text-align: center;
+    color: #a5a5a5;
+    background: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  
+  
+  @media (max-width: 400px) {
+  
+    .roww{
+        display: block;
+    }
+    .social{
+      text-align: center;
+    }
+  
+  }

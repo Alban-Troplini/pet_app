@@ -1,0 +1,106 @@
+/* card section */
+
+/* loader effect */
+#loader {
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    margin:100px auto;
+    background: url("../if_logo.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  /* Add animation to "page content" */
+  #upl{
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+
+
+
+.card-con{
+    padding: 20px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.photo{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    outline: none;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 300px;
+    margin: 20px;
+    height: 440px;
+    text-align: center;
+    background: white;
+    transition: transform .5s;
+   
+  }
+
+  .card:hover{
+      transform: scale(1.05);
+
+  }
+  .card h1{
+    font-size: 1.7rem;
+      color: rgb(60, 61, 61);
+      background: transparent;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 1rem;
+    margin: 10px;
+    background: transparent;
+  }
+  
+  .title2 {
+    color: rgb(58, 58, 58);
+    font-size: 1.1rem;
+    margin: 10px;
+    background: transparent;
+  }
+
+ .card-but {
+   position: absolute;
+    border: none;
+    outline: 0;
+    bottom: 0;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  
+  .card-but:hover{
+    color: #ffbb00;
+  }
+  
+
+  /* end of pets items */
+
+ 

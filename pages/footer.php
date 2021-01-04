@@ -1,4 +1,4 @@
-<footer>
+
             <div class="f-cont bg-primary bg-gradient">
                 <div class="roww">
                     <h3>Get your favorite pet, 

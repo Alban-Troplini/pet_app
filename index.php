@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- about style -->
     <link rel="stylesheet" href="./css/about.css">
+    <!-- footer style -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- cards style -->
+    <link rel="stylesheet" href="./css/cards.css">
+    <!-- search style -->
+    <link rel="stylesheet" href="./css/search.css">
+    <!-- mavbar style -->
+    <link rel="stylesheet" href="./css/navbar.css">
         <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- bootstrap bundle -->

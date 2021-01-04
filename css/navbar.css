@@ -1,0 +1,60 @@
+
+.navbar{
+    position: fixed; /* Make it stick/fixed */
+    width: 100%; /* Full width */
+    top: 0;
+    background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.links {
+    background: transparent;
+}
+.navul{
+    display: flex;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+    color: rgb(184, 184, 184);
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    background: transparent;
+}
+.navul li{
+    background: transparent;
+    display: inline;
+    margin: 0 15px;
+}
+.a-li{
+  background: transparent;
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.a-li:hover{
+    color: goldenrod;
+}
+
+.img-back{
+    background: url("https://img.icons8.com/ios-filled/60/000000/animal-shelter.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+@media (max-width: 400px){
+   
+    .navul{
+        display: table-row;
+        font-size: 10px;
+        margin: 10px 5px;
+    }
+    .img-back{
+        width: 35px;
+        height: 35px;
+    }
+}

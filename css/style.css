@@ -4,53 +4,6 @@
     padding: 0;
 }
 
-.navbar{
-    position: fixed; /* Make it stick/fixed */
-    width: 100%; /* Full width */
-    top: 0;
-    background: linear-gradient(90deg, hsla(185, 64%, 51%, 1) 0%, hsla(277, 74%, 24%, 1) 100%);
-    padding: 0px 30px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 10;
-}
-
-.links {
-    width: 30%;
-    padding: 10px;
-    background: transparent;
-}
-.navul{
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    cursor: pointer;
-    color: rgb(184, 184, 184);
-    font-family: sans-serif;
-    background: transparent;
-}
-.navul li{
-    background: transparent;
-    display: inline-block;
-}
-.a-li{
-  background: transparent;
-  text-decoration: none;
-  color: #aaaaaa;
-}
-.a-li:hover{
-    color: goldenrod;
-}
-
-.img-back{
-  background: url("https://img.icons8.com/ios-filled/60/000000/animal-shelter.png");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
 .maini{
     margin: 50px 10px;
     display: flex;
@@ -135,207 +88,37 @@
   }
 
 
-  .cont{
-      width: 100%;
-      height: 100vh;
-  }
-  .cont h1{
-      text-align: center;
-      color: white;
-      padding: 450px;
-  }
 /* end of header */
-/* ------------------------------- */
-/* search form input styles */
 
+@media (max-width: 400px){
 
-
-.inputs {
-    display: flex;
-    justify-content: space-around;
-    padding:20px 0;
-}
-
-.se{
-    margin:50px auto;
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-    padding: 10px;
-    font-size: 17px;
-    border: 2px solid #69A197;
-    border-radius: 30px;
-    
-}
-.sear{
-    flex: auto;
-    padding: 5px 10px;
-    border: none;
-    font-size: 1.5rem;
-    outline: none;
-}
-
-
-.sub-but{
-    width: 10%;
-    border: none;
-    background: transparent;
-    font-size: 1.5rem;
-    outline: none;
-    cursor: pointer;
-}
-.sub-but:hover{
-    color: #69A197;
-}
-
-.gender{
-    padding: 10px;
-    font-size: 1.5rem;
-    color: #646464;
-    border: 2px solid rgb(49, 49, 49);
-    border-radius: 30px;
-    outline: none;
-}
-
-/* end of search section */
-
-/* card section */
-
-/* loader effect */
-#loader {
-    z-index: 1;
-    width: 60px;
-    height: 60px;
-    margin:100px auto;
-    background: url("../if_logo.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .maini{
+    margin: 10px;
+    display: block;
   }
 
-  
-  /* Add animation to "page content" */
-  #upl{
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-
-
-
-.card-con{
-    padding: 50px;
-    max-width: 100%;
-    margin: 50px 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.photo{
-    width: 350px;
-    height: 200px;
-    object-fit: cover;
-    outline: none;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 300px;
-    margin: 20px;
-    height: 440px;
-    text-align: center;
-    background: white;
-    transition: transform .5s;
-   
-  }
-
-  .card:hover{
-      transform: scale(1.05);
-
-  }
-  .card h1{
+  .titles{
     font-size: 1.7rem;
-      color: rgb(60, 61, 61);
-      background: transparent;
   }
-  
-  .title {
-    color: grey;
-    font-size: 1rem;
-    margin: 10px;
-    background: transparent;
+  .text{
+    font-size: 1.4rem;
   }
-  
-  .title2 {
-    color: rgb(58, 58, 58);
-    font-size: 1.1rem;
-    margin: 10px;
-    background: transparent;
-  }
-
- .card-but {
-   position: absolute;
-    border: none;
-    outline: 0;
-    bottom: 0;
+  .but{
+    width: 80px;
     padding: 5px;
-    color: white;
-    background: linear-gradient(90deg, hsla(190, 79%, 59%, 1) 0%, hsla(226, 50%, 65%, 1) 100%);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 1.3rem;
+    margin: 5px;
+    margin: auto;
   }
-  
-  .card-but:hover{
-    color: #ffbb00;
+  .but-a{
+    font-size: 10px;
   }
-  
+  /* slider */
 
-  /* end of pets items */
-
-  /* footer section */
-
-.f-cont{
-  width: 100%;
-  height: 150px;
-  border-top: 10px solid #ffbb00;
-}
-.f-cont h3{
-  font-size: 1.5rem;
-  color: #e2e2e2;
-  text-shadow: 1px 1px 1px #3a3a3a;
-  background: transparent;
-  font-family: sans-serif;
-
-}
-
-.social{
-  font-size: 2rem;
-  margin: 10px;
-  background: transparent;
-}
-.roww{
-  margin: 5px;
-  background: transparent;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.copyright{
-  text-align: center;
-  color: #a5a5a5;
-  background: transparent;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .main-img{
+      max-width: 150px;
+    }
+    .mimg{
+      max-width: 150px;
+    }
+    
 }
