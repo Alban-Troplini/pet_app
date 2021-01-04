@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Friend</title>
+    <link rel = "icon" href ="./images/ww.png" 
+        type = "image/x-icon"> 
         <!-- css styles -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- about style -->
