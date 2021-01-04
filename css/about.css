@@ -8,7 +8,6 @@
     background: linear-gradient(50deg, hsla(63, 100%, 77%, 1) 0%, rgb(231, 132, 180) 100%);
     margin: 50px;
     display: flex;
-    width: 90%;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -48,18 +47,21 @@
   }
   
   
-  @media (max-width: 408px) {
+  @media (max-width: 400px) {
+  
     .row-ab{
       display: block;
-      margin: 5px;
+      margin: 20px;
     }
 
     .i-img{
-      width: 350px;
-      height: 200px;
+      width: 250px;
+      height: 150;
+      
+      margin: auto;
     }
 
     .i-txt{
-      width: 350px;
+      width: 250px;
     }
   }
