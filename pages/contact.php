@@ -40,12 +40,13 @@ if(isset($_GET['?pet'])) {
           <li class="list-group-item lh-sm mx-auto">
             <div class="mx-auto">
               <h6 class="text-center"><?php echo $name; ?></h6>
-              <small class="text-muted"><?php echo $description; ?></small>
             </div>
             <div>
-                <img src="<?php echo $photo; ?>" class="image-thumbnail " width="200" alt="">
+                <img src="animal_images/<?php echo $photo; ?>" class="image-thumbnail " width="200" alt="">
             </div>
+            <p class="text-muted m-3" style="width: 170px;"> <?php echo $description; ?> </p>
           </li>
+          
         </ul>
       </div>
 
@@ -73,7 +74,7 @@ if(isset($_GET['?pet'])) {
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" placeholder="you@example.com">
               <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
+                Please enter a valid email address.
               </div>
             </div>
 
@@ -81,7 +82,7 @@ if(isset($_GET['?pet'])) {
               <label for="address" class="form-label">Address</label>
               <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
               <div class="invalid-feedback">
-                Please enter your shipping address.
+                Please enter your address.
               </div>
             </div>
 
@@ -118,14 +119,6 @@ if(isset($_GET['?pet'])) {
               </div>
             </div>
 
-            <div class="col-md-3">
-              <label for="zip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
-              <div class="invalid-feedback">
-                Zip code required.
-              </div>
-            </div>
-          </div>
 
           <hr class="my-4">
 

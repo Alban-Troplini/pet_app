@@ -35,11 +35,11 @@
                 </div>
                 <div class="links">
                     <ul class="navul">
-                        <li><a class="a-li" href="?page=main">Home</a></li>
+                        <li><a class="a-li active" href="?page=main">Home</a></li>
                         <li><a class="a-li" href="?page=about">About</a></li>
                         <li><a class="a-li" href="?page=dogs">Dogs</a></li>
                         <li><a class="a-li" href="?page=cats">Cats</a></li>
-                        <li><a class="a-li" href="?page=uploads">Upload</a></li>
+                        <li><a class="a-li" href="?page=uploads">New Pet</a></li>
                     </ul>
                 </div>
             </div>

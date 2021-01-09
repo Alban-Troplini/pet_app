@@ -26,7 +26,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" src="<?php echo $photo; ?>" alt="" width="100%" height="225" />
+            <img class="bd-placeholder-img card-img-top" src="animal_image/<?php echo $photo; ?>" alt="" width="100%" height="225" />
             <div class="card-body">
               <h3 class="card-text"><?php echo $name; ?></h3>
               <p class="card-text"><?php echo $description; ?></p>

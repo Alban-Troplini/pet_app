@@ -8,17 +8,9 @@
 
 <?php
 
-
-
-
 if(isset($_POST['register'])){
 
-    $target_dir = "../animal_images/";
-    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-
-
-    $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $photoName = $_FILES['fileToUpload']['name'];
 
 
         $name = escape($_POST['name']);
@@ -27,15 +19,23 @@ if(isset($_POST['register'])){
         $address = escape($_POST['address']);
         $type = escape($_POST['type']);
         $race = escape($_POST['race']);
-        $photo = escape($_FILES["fileToUpload"]["name"]);
+        $photo = escape($photoName);
 
 
-        $query = "INSERT INTO animals ('name', 'description', 'gender', 'photo', 'race', 'city', 'type') ";
-        $query .= "VALUES ('$name', '$description', '$gender', '$photo', '$race', '$address', '$type')";
+        $query = "INSERT INTO animals (name, description, gender, photo, race, city, type) VALUES ('$name', '$description', '$gender', '$photo', '$race', '$address', '$type')";
+        
 
 
-        query($query);
+        $result = query($query);
 
+        if($result){ 
+
+    $target_dir = "./animal_images/";
+    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+
+
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 // Check if image file is a actual image or fake image
 // if(isset($_POST["upload"])) {
@@ -43,10 +43,10 @@ if(isset($_POST['register'])){
 
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
   if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
+   
     $uploadOk = 1;
   } else {
-    echo "File is not an image.";
+   
     $uploadOk = 0;
   }
 }
@@ -57,7 +57,7 @@ if (file_exists($target_file)) {
   $uploadOk = 0;
 }
 
-// Check file size
+//Check file size
 if ($_FILES["fileToUpload"]["size"] > 5000000) {
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
@@ -76,10 +76,11 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    echo "The pet with ". $name . " has been uploaded.";
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    echo "Sorry, there was an error of register this pet. Please try again.";
   }
+}
 }
  
 
@@ -101,7 +102,7 @@ if ($uploadOk == 0) {
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
+              <input type="text" class="form-control" id="name" name="name" required>
               <div class="invalid-feedback">
                 Valid name is required.
               </div>
@@ -160,7 +161,7 @@ if ($uploadOk == 0) {
            
             <div class="input-group m-4 col-md-3 mx-auto">
                     <input class="form-control" type="file" name="fileToUpload" id="fileToUpload">
-                    <input class="btn btn-primary" type="submit" value="Upload Image" name="upload">
+                    <input class="btn btn-primary" value="Upload Image">
             
             </div>
             

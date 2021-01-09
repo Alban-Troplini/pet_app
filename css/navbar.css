@@ -36,6 +36,9 @@
 .a-li:hover{
     color: goldenrod;
 }
+.active{
+    color: goldenrod;
+}
 
 .img-back{
     background: url("https://img.icons8.com/ios-filled/60/000000/animal-shelter.png");

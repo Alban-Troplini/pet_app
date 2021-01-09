@@ -34,7 +34,7 @@
 
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <img class="bd-placeholder-img card-img-top" width="100%" height="225"focusable="false" role="img" aria-label="Placeholder: Thumbnail" src="<?php echo $photo; ?>" alt="<?php echo $name; ?>" />
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"focusable="false" role="img" aria-label="Placeholder: Thumbnail" src="animal_images/<?php echo $photo; ?>" alt="<?php echo $name; ?>" />
             <div class="card-body">
               <h3 class="card-text"><?php echo $name; ?></h3>
               <p class="card-text"><?php echo $description; ?></p>
