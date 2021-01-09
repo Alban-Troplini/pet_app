@@ -1,4 +1,32 @@
 
+
+<?php require_once("./functions/init.php") ?>
+
+<?php 
+if(isset($_GET['?pet'])) { 
+
+    $pet = $_GET['?pet'];
+
+    $query = "SELECT * FROM animals WHERE id='$pet'";
+    
+    $result = query($query);
+    confirm($result);
+
+    while($pet = fetch_array($result)) {
+        $id = $pet['id'];
+        $name = $pet['name'];
+        $description = $pet['description'];
+        $photo = $pet['photo'];
+        $race = $pet['race'];
+        $city = $pet['city'];
+        $type = $pet['type'];
+    
+    }
+  }
+  else {
+    $pet = "";
+  }
+?>
     
 <div class="container" style="margin: 50px auto;">
   <main>
@@ -11,11 +39,11 @@
         <ul class="list-group mb-3">
           <li class="list-group-item lh-sm mx-auto">
             <div class="mx-auto">
-              <h6 >Product name</h6>
-              <small class="text-muted">Brief description</small>
+              <h6 class="text-center"><?php echo $name; ?></h6>
+              <small class="text-muted"><?php echo $description; ?></small>
             </div>
             <div>
-                <img src="https://gimmeinfo.com/wp-content/uploads/2016/02/pets-cat-dog-2-1100x866.jpg" class="image-thumbnail" width="200" alt="">
+                <img src="<?php echo $photo; ?>" class="image-thumbnail " width="200" alt="">
             </div>
           </li>
         </ul>

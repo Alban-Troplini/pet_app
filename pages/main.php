@@ -13,4 +13,5 @@
 
     <?php require_once('search.php'); ?>
     <?php require_once('home.php'); ?>
+    <button class="btn btn-info mx-auto">Contact</button>
     
